@@ -1,0 +1,15 @@
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\bin\Debug\Yet Another Game Patcher.exe.config
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\bin\Debug\Yet Another Game Patcher.exe
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\bin\Debug\Yet Another Game Patcher.pdb
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\obj\Debug\MainWindow.baml
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\obj\Debug\MainWindow.g.cs
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\obj\Debug\App.g.cs
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\obj\Debug\Yet Another Game Patcher_MarkupCompile.cache
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\obj\Debug\Yet Another Game Patcher.g.resources
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\obj\Debug\Yet_Another_Game_Patcher.Properties.Resources.resources
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\obj\Debug\Yet Another Game Patcher.csproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\obj\Debug\Yet Another Game Patcher.exe
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\obj\Debug\Yet Another Game Patcher.pdb
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\obj\Debug\Yet Another Game Patcher.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\bin\Debug\Extensions.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Yet Another Game Patcher\bin\Debug\Extensions.pdb
