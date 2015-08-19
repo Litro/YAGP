@@ -12,21 +12,7 @@ Configuring the updater will be done in a file called Patcher.xml alongside the 
 | **NewsPage** | Contains the url that will be loaded in the webbrowser window. |
 | **GameClient** | Contains the name of your executable, in case you do not wish to call it something generic. |
 
-The resulting file would look similar to the following:
-`<?xml version="1.0" encoding="utf-8"?>
-
-<options>
-
-	<option key="GameName" value="Yet Another Game Patcher" />
-
-	<option key="RemoteDirectory" value="http://yoururlhere/files/" />
-
-	<option key="NewsPage" value="http://google.com/" />
-
-	<option key="GameClient" value="Client.exe" />
-
-</options>
-`
+The resulting file would look similar to the following: http://pastebin.com/Vm2njkq6
 
 **Note that these are all case sensitive!**
 
