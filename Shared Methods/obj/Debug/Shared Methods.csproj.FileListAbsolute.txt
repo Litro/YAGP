@@ -1,5 +1,0 @@
-\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Shared Methods\obj\Debug\Shared Methods.csprojResolveAssemblyReference.cache
-\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Shared Methods\bin\Debug\Extensions.dll
-\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Shared Methods\bin\Debug\Extensions.pdb
-\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Shared Methods\obj\Debug\Extensions.dll
-\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Shared Methods\obj\Debug\Extensions.pdb

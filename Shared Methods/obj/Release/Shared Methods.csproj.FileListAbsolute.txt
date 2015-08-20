@@ -1,4 +1,0 @@
-\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Shared Methods\bin\Release\Extensions.dll
-\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Shared Methods\bin\Release\Extensions.pdb
-\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Shared Methods\obj\Release\Extensions.dll
-\\psf\Home\Documents\Visual Studio 2013\Projects\YAGP\Shared Methods\obj\Release\Extensions.pdb
