@@ -41,12 +41,13 @@ namespace Yet_Another_Game_Patcher {
             } else {
                 MessageBox.Show("Unable to locate 'Patcher.xml'!", "File not Found", MessageBoxButton.OK, MessageBoxImage.Error);
                 this.Close();
+                return;
             }
 
             var data        = new WebClient().DownloadData(Options["RemoteDirectory"] + "Checksums.xml");
             var remotefiles = XElement.Load(new MemoryStream(data));
             var worker      = new BackgroundWorker();
-            worker.DoWork               += new DoWorkEventHandler(CompareFiles);
+            worker.DoWork             += new DoWorkEventHandler(CompareFiles);
             worker.RunWorkerCompleted += (s, a) => { PlayButton.Dispatcher.BeginInvoke((Action)(() => { ContentLabel.Content = "Ready."; PlayButton.IsEnabled = true; })); };
             worker.RunWorkerAsync(remotefiles);
         }
@@ -55,13 +56,13 @@ namespace Yet_Another_Game_Patcher {
             var files   = e.Argument as XElement;
             var total   = files.Elements().Count();
             var current = 0;
-            TotalProgress.Dispatcher.BeginInvoke((Action)(() => { TotalProgress.Maximum = total; }));
+            this.ThreadSafe(() => { TotalProgress.Maximum = total; });
             foreach (var file in files.Elements()) {
                 var dir         = AppDomain.CurrentDomain.BaseDirectory + "\\";
                 var name        = file.Attribute("name").Value;
                 var rhash       = file.Attribute("hash").Value;
                 var download    = false;
-                ContentLabel.Dispatcher.BeginInvoke((Action)(() => { ContentLabel.Content = String.Format("Checking {0}...", name); }));
+                this.ThreadSafe(() => { ContentLabel.Content = String.Format("Checking {0}...", name); });
                 if (!File.Exists(dir + name)) {
                     download = true;
                 } else {
@@ -72,7 +73,7 @@ namespace Yet_Another_Game_Patcher {
                 }
 
                 if (download) {
-                    ContentLabel.Dispatcher.BeginInvoke((Action)(() => { ContentLabel.Content = String.Format("Downloading {0}...", name); }));
+                    this.ThreadSafe(() => { ContentLabel.Content = String.Format("Downloading {0}...", name); });
                     if (!Directory.Exists(System.IO.Path.GetDirectoryName(dir + name))) Directory.CreateDirectory(System.IO.Path.GetDirectoryName(dir + name));
                     if (File.Exists(dir + name)) File.Delete(dir + name);
                     using (var client = new WebClient()) {
@@ -81,7 +82,7 @@ namespace Yet_Another_Game_Patcher {
                 }
 
                 current++;
-                TotalProgress.Dispatcher.BeginInvoke((Action)(() => { TotalProgress.Value = current; }));
+               this.ThreadSafe(() => { TotalProgress.Value = current; });
             }
         }
 

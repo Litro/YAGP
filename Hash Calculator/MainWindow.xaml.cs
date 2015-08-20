@@ -47,7 +47,7 @@ namespace Hash_Calculator {
         }
 
         private void GenerateComplete(Object sender, RunWorkerCompletedEventArgs e) {
-            ButtonGo.Dispatcher.BeginInvoke((Action)(() => { ButtonGo.Content = "Go!"; ButtonGo.IsEnabled = true; }));
+           this.ThreadSafe(() => { ButtonGo.Content = "Go!"; ButtonGo.IsEnabled = true; });
             System.Windows.Forms.MessageBox.Show("Done!");
         }
 
