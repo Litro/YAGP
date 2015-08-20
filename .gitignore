@@ -1,3 +1,6 @@
 # Folders to Ignore #
 **/bin/
 **/obj/
+
+# Files to Ignore #
+*.suo
