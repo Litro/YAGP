@@ -20,6 +20,11 @@ namespace Shared_Methods {
         #endregion
 
         #region WPF
+        /// <summary>
+        /// Invokes the supplied action onto the supplied Window.
+        /// </summary>
+        /// <param name="win">The destination window</param>
+        /// <param name="act">The action to execute</param>
         public static void ThreadSafe(this Window win, Action act) {
             win.Dispatcher.BeginInvoke(act);
         }

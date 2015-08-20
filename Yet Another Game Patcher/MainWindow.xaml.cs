@@ -50,7 +50,7 @@ namespace Yet_Another_Game_Patcher {
                 var remotefiles = XElement.Load(new MemoryStream(data));
                 var worker = new BackgroundWorker();
                 worker.DoWork += new DoWorkEventHandler(CompareFiles);
-                worker.RunWorkerCompleted += (s, a) => { PlayButton.Dispatcher.BeginInvoke((Action)(() => { ContentLabel.Content = "Ready."; PlayButton.IsEnabled = true; })); };
+                worker.RunWorkerCompleted += (s, a) => { this.ThreadSafe(() => { ContentLabel.Content = "Ready."; PlayButton.IsEnabled = true; }); };
                 worker.RunWorkerAsync(remotefiles);
             } catch { ReportError("An error has occured while processing the remote data."); return; }
         }
